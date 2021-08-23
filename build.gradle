@@ -1,17 +1,17 @@
-task hello doLast {
+ task hello doLast {
 	def command = ['sh', './my_script.sh']
 	command.execute().with{
 	println "Bash script is executed"
 	}
 }
 
-/*
+
 
 repositories {
 	mavenCentral()
 }
 
-apply plugin: 'python'
+/* apply plugin: 'python' */
 
 task wishes{
 	group 'greeting'
@@ -35,4 +35,3 @@ task tasky(dependsOn: taskX) {
 	println "i am takY depends on taskX"	
 }
 
-*/
